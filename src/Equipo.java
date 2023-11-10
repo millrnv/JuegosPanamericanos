@@ -41,7 +41,19 @@ public class Equipo {
     }
 
     public void mostrarInfoEquipo(){
+        System.out.println("Nombre del equipo: " + getNombreEquipo());
 
+        System.out.println("Atletas:");
+        for (Atleta atleta : atletas) {
+            System.out.println("- " + atleta.getNombre());
+        }
+
+        System.out.println("Disciplinas:");
+        for (Disciplina disciplina : disciplinas) {
+            System.out.println("- " + disciplina.getNombreDisciplina());
+        }
     }
 
 }
+
+

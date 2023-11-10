@@ -41,12 +41,11 @@ public class Disciplina {
     }
 
     public void mostrarInformacion(){
-
+        System.out.println("Nombre de la disciplina: " + getNombreDisciplina());
+        System.out.println("Número de participantes: " + getnParticipantes());
+        System.out.println("Record mundial: " + getRecordMundial());
 
     }
-
-
-
 
 
 }
