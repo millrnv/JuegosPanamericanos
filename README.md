@@ -8,4 +8,6 @@ La clase Disciplina tiene como agregación la clase Evento.
 La clase Atleta tiene asociacion con la clase Disciplina.
 La clase JuegosPanamericanos compone Disciplina y Evento.
 
+UML
+
 ![image](https://github.com/millrnv/JuegosPanamericanos/assets/146766468/23cb6210-9968-4a67-8d77-9cfb035fb3ae)
