@@ -1,9 +1,18 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Atleta {
 
     private String nombre;
     private String pais;
     private int edad;
-    //Lista disciplina (?)
+    private List<Disciplina> disciplinas;
+
+    public Atleta(){
+
+        disciplinas = new ArrayList<>();
+
+    }
 
 
 
@@ -38,20 +47,30 @@ public class Atleta {
 
     }
 
-    public void agregarDisciplina(){
+
+
+    public void agregarDisciplina(Disciplina disciplina){
+        disciplinas.add(disciplina);
+
 
 
     }
 
-    public void eliminarDisciplina(){
+    public void eliminarDisciplina(Disciplina disciplina){
+        disciplinas.remove(disciplina);
+
 
 
     }
 
     public void mostrarInfoAtleta(){
-
-
+        System.out.println("Nombre: " + getNombre());
+        System.out.println("País: " + getPais());
+        System.out.println("Edad: " + getEdad());
+        System.out.println("Disciplinas: " + disciplinas);
     }
+
+
 
 
 }

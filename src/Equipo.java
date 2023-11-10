@@ -4,29 +4,44 @@ public class Equipo {
 
     private String nombreEquipo;
     private List<Atleta> atletas;
-    //Lista disciplinas (?)
+    private List<Disciplina> disciplinas;
 
-    public Equipo() {
 
-    }
+
 
     public String getNombreEquipo(){
-        return
+        return this.nombreEquipo;
 
     }
 
-    public void setNombreEquipo(){
+    public void setNombreEquipo(String nombreEquipo){
+        this.nombreEquipo = nombreEquipo;
 
     }
 
     public List<Atleta> getAtletas(){
+        return this.atletas;
 
     }
 
 
-
     public void setAtletas(List<Atleta> atletas) {
         this.atletas = atletas;
+    }
+
+    public void agregarAtleta(Atleta atleta){
+        atletas.add(atleta);
+
+    }
+
+    public void eliminarAtleta(Atleta atleta){
+        atletas.remove(atleta);
+
+
+    }
+
+    public void mostrarInfoEquipo(){
+
     }
 
 }

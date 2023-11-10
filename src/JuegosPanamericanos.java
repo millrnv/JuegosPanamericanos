@@ -6,4 +6,11 @@ public class JuegosPanamericanos {
 
 
     }
+
+
+    public void Menu(){
+
+    }
+
+
 }
